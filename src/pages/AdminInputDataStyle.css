@@ -1,0 +1,68 @@
+.admin-input-data {
+  padding-bottom: 30px;
+  .content {
+    .input-form {
+      width: 600px;
+      margin: auto;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      .row {
+        display: flex;
+        justify-content: space-between;
+      }
+      .input-group {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        input {
+          width: 280px;
+          padding: 5px;
+          font-size: 14px;
+          border-radius: 3px;
+          border: 1px solid #b3b3b3;
+        }
+        #Deskripsi,
+        #Alamat {
+          width: 600px;
+          height: 300px;
+          resize: none;
+        }
+        #Alamat {
+          height: 100px;
+        }
+        #Image {
+          width: 100%;
+        }
+        input:focus {
+          outline: none;
+          border: 2px solid #57db0b;
+        }
+      }
+      .show-password {
+        gap: 3px;
+        display: flex;
+        flex-direction: row;
+      }
+      button {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        padding: 15px 0;
+        font-weight: 600;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+      button:disabled {
+        background-color: #b3b3b3;
+      }
+    }
+  }
+}
+
+.map-box {
+  background-color: #57db0b;
+  width: 100%;
+  height: 300px;
+}

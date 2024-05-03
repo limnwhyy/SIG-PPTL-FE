@@ -1,0 +1,64 @@
+.admin-perguruan-tinggi {
+  .table-container {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    tabel {
+      width: 100%;
+      table-layout: auto;
+    }
+    table,
+    tr,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      padding: 15px;
+    }
+    tr:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    .nama {
+      width: 200px;
+    }
+    .alamat {
+      width: 350px;
+    }
+    td {
+      .button-container {
+        gap: 10px;
+        display: flex;
+        button {
+          gap: 3px;
+          width: 80px;
+          display: flex;
+          font-size: 14px;
+          cursor: pointer;
+          align-items: center;
+          justify-content: center;
+        }
+        .edit {
+          color: #f1f1f1;
+          background-color: rgba(227, 158, 9, 1);
+        }
+        .delete {
+          color: #f1f1f1;
+          background-color: rgba(230, 23, 23, 1);
+        }
+        .edit:hover {
+          transition: 0.5s;
+          background-color: rgba(227, 158, 9, 0.7);
+        }
+        .delete:hover {
+          transition: 0.5s;
+          background-color: rgba(230, 23, 23, 0.7);
+        }
+      }
+    }
+  }
+}

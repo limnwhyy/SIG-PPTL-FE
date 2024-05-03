@@ -1,0 +1,124 @@
+.login-page {
+  display: flex;
+  overflow: hidden;
+  max-width: 100vw;
+  max-height: 100vh;
+  align-items: center;
+  flex-direction: row;
+  background-color: #d9d9d9;
+  justify-content: space-between;
+  .image-container {
+    width: 100%;
+    figure {
+      width: 100%;
+      img {
+        width: 100%;
+        max-height: 100%;
+        object-fit: fill;
+      }
+    }
+  }
+  .main {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      #f1f1f1 45.5%,
+      rgba(241, 241, 241, 0.1) 99.11%
+    );
+    display: flex;
+    max-height: 100%;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    .content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      .text-container {
+        h3 {
+          font-size: 18px;
+          font-weight: 600;
+          color: #8f0707;
+        }
+        h1 {
+          font-size: 62px;
+          font-weight: 400;
+          color: #9c4b00;
+        }
+      }
+      .form-container {
+        gap: 25px;
+        width: 300px;
+        display: flex;
+        border-radius: 5px;
+        height: fit-content;
+        align-items: center;
+        padding: 30px 0 10px 0;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #f1f1f1;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        .login-form {
+          gap: 20px;
+          display: flex;
+          flex-direction: column;
+
+          .input-group {
+            gap: 5px;
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+            input {
+              padding: 5px;
+              font-size: 14px;
+              border-radius: 3px;
+              border: 1px solid #b3b3b3;
+            }
+            input:focus {
+              outline: none;
+              border: 2px solid #57db0b;
+            }
+          }
+          .show-password {
+            gap: 3px;
+            display: flex;
+            flex-direction: row;
+          }
+          button {
+            width: 220px;
+            display: flex;
+            padding: 10px 0;
+            font-weight: 600;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+          }
+          button:disabled {
+            background-color: #b3b3b3;
+          }
+        }
+        .other {
+          gap: 10px;
+          display: flex;
+          text-align: center;
+          flex-direction: column;
+          p {
+            font-size: 14px;
+            font-weight: 400;
+          }
+          a {
+            color: #001e87;
+            text-decoration: underline;
+          }
+        }
+        .copyright {
+          color: #818181;
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
