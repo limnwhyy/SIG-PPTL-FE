@@ -1,30 +1,75 @@
-# React + TypeScript + Vite
+# Sistem Informasi Geografis: Persebaran Perguruan Tinggi Lampung (SIG:PPTL)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="./src/assets/home_top.png" />
 
-Currently, two official plugins are available:
+Sistem Informasi Geografis Persebaran Perguruan tinggi Lampung merupakan sebuah media untuk transparansi tata letak dan persebaran perguruan tinggi di Lampung. Berdasarkan Sustainable Development Goals 4 tentang Pendidikan Berkualitas, sistem ini diharapkan dapat mendukung akses pendidikan ke jenjang tinggi secara merata serta ikut berkontribusi demi menunjang kualitas pendidikan yang berkelanjutan di Lampung.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Fitur
 
-## Expanding the ESLint configuration
+1. Informasi daftar perguruan tinggi di Lampung.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<img src="./src/assets/daftar_perguruan_tinggi.png" width=600 alt="persebaran perguruan tinggi" />
 
-- Configure the top-level `parserOptions` property like this:
+2. Denah persebaran perguruan perguruan tinggi di Lampung.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+<img src="./src/assets/preview_map.png" width=600 alt="Preview Map" />
+
+3. Masuk sebagai Admin.
+
+<img src="./src/assets/login.png" width=600 alt="login" />
+
+4. Kelola data perguruan perguruan tinggi (Admin).
+
+- Halaman Utama Admin <br /> <img src="./src/assets/index.png" width=600 alt="kelola perguruan tinggi" />
+
+- Edit Perguruan Tinggi <br /> <img src="./src/assets/edit.png" width=600 alt="edit perguruan tinggi" />
+
+- Iput Perguruan Tinggi <br /> <img src="./src/assets/input.png" width=600 alt="input perguruan tinggi" />
+
+## Tech Stack
+
+- [ReactJS](https://reactjs.org/)
+- [Nest Js](https://nestjs.com/)
+- [QGIS](https://qgis.org/)
+- [LeafletJS](https://leafletjs.com/)
+- [PostgreSQL](https://www.postgresql.org/)
+
+## Pengembang
+
+| No  | Nama Kontributor            | NIM       | Kontribusi     |
+| --- | --------------------------- | --------- | -------------- |
+| 1.  | Muhammad Muslim Nur Wahyudi | 120140008 | Backend        |
+| 2.  | Muhammad Alhafiz            | 120140108 | Frontend       |
+| 3.  | Tegar Abimanyu              | 120140112 | Data Engineer  |
+| 4.  | Daniel Albertus Turnip      | 120140140 | UI/UX Designer |
+| 5.  | Ichza Auliya Gumilar        | 120140188 | QA             |
+| 6.  | Hafiz Amrullah              | 119140177 | System Design  |
+
+## Instalasi
+
+> [!IMPORTANT]
+> Pastikan anda sudah menginstall [NodeJS](https://nodejs.org/en/) dan [NPM](https://www.npmjs.com/) atau [PNPM](https://pnpm.io/). Sistem ini berjalan dengan secara masksimal hanya jika sistem [ini](https://github.com/limnwhyy/SIG-PPTL-BE.git) juga dijalankan.
+
+1. Clone repository ini
+
+```
+git clone https://github.com/limnwhyy/SIG-PPTL-FE.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Masuk ke direktori project
+
+```
+cd SIG-PPTL-FE
+```
+
+3. Install dependencies
+
+```
+pnpm install
+```
+
+4. Jalankan aplikasi
+
+```
+pnpm run dev
+```

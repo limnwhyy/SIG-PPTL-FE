@@ -97,13 +97,12 @@ const AboutUsPage = () => {
               rincian anggota tim sebagai berikut:
             </p>
             <ol>
-              <li>Muhammad Muslim Nur Wahyudi (NIM: XXXXXXXXX)</li>
-              <li>Muhammad Alhafiz (NIM: XXXXXXXXX)</li>
-              <li>Ichza Aulia Gumilar (NIM: XXXXXXXXX)</li>
-              <li>Aggota 4</li>
-              <li>Aggota 5</li>
-              <li>Aggota 6</li>
-              <li>Aggota 7</li>
+              <li>Muhammad Muslim Nur Wahyudi (NIM: 120140008)</li>
+              <li>Muhammad Alhafiz (NIM: 120140108)</li>
+              <li>Tegar Abimanyu (NIM: 120140112)</li>
+              <li>Daniel Albertus Turnip (NIP: 120140140)</li>
+              <li>Ichza Auliya Gumilar (NIM: 120140188)</li>
+              <li>Hafiz Amrullah (NIM: 119140177)</li>
             </ol>
           </div>
           <div className="section-content">
